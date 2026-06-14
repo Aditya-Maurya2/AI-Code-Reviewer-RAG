@@ -3,11 +3,9 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-
 genai.configure(
     api_key=os.getenv("AIzaSyCslgh4eZAYDFmEFZYDZHDvJvvEaEQe44E")
 )
-
 model = genai.GenerativeModel(
     "gemini-2.5-flash"
 )
